@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+ul{
+list-style: none;
+}
+a{
+text-decoration: none;
+}
+img{
+vertical-align: bottom;
+max-width: 100%;/* フルードイメージ */
+}
+
+/* コンテナ部分 */
+.container{
+display: flex;
+flex-direction: row-reverse;
+}
+/* コンテンツ部分 */
+.contents{
+width: 50%;
+}
+/* header部分 */
+header{
+padding: 50px 0;
+text-align: center;
+}
+
+/* .city部分 */
+.city{
+padding: 120px 20px;
+}
+.city>h2{
+margin-bottom: 16px;
+}
+.main-photo{
+width: 100%;
+aspect-ratio: 16/9;/* 幅/高さの比率 */
+margin-bottom: 20px;
+}
+.main-photo>img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+.city-text{
+margin-bottom: 20px;
+}
+.wrapper{
+display: flex;
+justify-content: space-between;
+}
+.thumbnail{
+width: 48%;
+aspect-ratio: 1/1;
+}
+.thumbnail>img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+
+
+
+
+
+
+/* メインビジュアル部分 */
+.main-visual{
+width: 50%;
+height: 100vh;
+position: sticky;
+left: 0;
+top: 0;
+}
+.main-visual>img{
+object-fit: cover;
+object-position:center 80%;
+width: 100%;
+height: 100%;
+}
+
+/* footer部分 */
+footer{
+width: 100%;
+height: 600px;
+background-color: #728f90;
+}
